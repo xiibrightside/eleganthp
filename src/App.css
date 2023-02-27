@@ -1,8 +1,23 @@
+/* !Reusables*/
+
+/*
+Buttons/Links/CTA = font-family: 'Oswald', sans-serif;
+Headings = font-family: 'Rokkitt', serif;
+Paras = font-family: 'Chivo Mono', monospace;
+*/
+
+.page-container {
+  width: 100%;
+  height: 100vh;
+  padding: 0 0 0 100px;
+  gap: 30px;
+}
+/* *SideBar*/
 .sidebar-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100px; /* ! REMEMBER: will be subtracted from the main pages as a margin*/
+  width: 100px;
   height: 100vh;
 }
 .legacy-logo {
@@ -70,4 +85,138 @@
 .social-icon:hover {
   color: #111111;
   width: 90%;
+}
+/* *HomePage*/
+
+/* SECTION 1 */
+.homepage-section1 {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/elegant-home-products-heroimage.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.section1-wrapper {
+  padding: 100px 0 100px 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 50%, #111111);
+}
+
+.homepage-section1 h1 {
+  max-width: 80%;
+  font-size: 15vh;
+  font-weight: 900;
+  font-family: "Rokkitt", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.homepage-section1 p {
+  font-size: 3vh;
+  font-family: 900;
+  color: white;
+  letter-spacing: 2px;
+  font-family: "Chivo Mono", monospace;
+}
+
+.homepage-section1 button {
+  padding: 12px 40px 12px 40px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 3px;
+  transition: all 500ms ease-in-out;
+}
+
+.homepage-section1 button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+/* SECTION 2 */
+.homepage-section2 {
+  width: 100%;
+  height: fit-content;
+  background-color: #111111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homepage-section2 h2 {
+  font-size: 5vh;
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.whyus-container {
+  padding: 30px;
+  color: #ffffff;
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.whyus-cell {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 10px;
+}
+
+.whyus-image-div {
+  border: #4267b2 2px solid;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.whyus-cell h3 {
+  font-family: "Chivo Mono", monospace;
+}
+.whyus-cell p {
+  font-family: "Chivo Mono", monospace;
+  font-size: 12px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+/* Gallery Carousel*/
+
+.gallery-container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.gallery-container h2 {
+  font-size: 5vh;
+  font-family: "Rokkitt", serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.carousel-wrapper {
+  width: 80%;
+  height: 300px;
+  background-color: transparent;
 }

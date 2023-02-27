@@ -1,28 +1,23 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
   return (
     <div className="sidebar-container">
-      <a href="#0">
-        <div className="legacy-logo">
-          <button>
-            <i className="fa-solid fa-indian-rupee-sign"></i>
-          </button>
-        </div>
-      </a>
       <div className="navigation-wrapper">
-        <a className="nav-element" href="#0">
-          HOME
-        </a>
-        <a className="nav-element" href="#0">
-          ABOUT
-        </a>
-        <a className="nav-element" href="#0">
-          SERVICES
-        </a>
-        <a className="nav-element" href="#0">
-          PRODUCTS
-        </a>
+        <div className="nav-element">
+          <NavLink to="/">HOME</NavLink>
+        </div>
+        <div className="nav-element">
+          <NavLink to="/about">ABOUT</NavLink>
+        </div>
+        <div className="nav-element">
+          <a href="#0">SERVICES</a>
+        </div>
+        <div className="nav-element">
+          <NavLink to="/products">PRODUCTS</NavLink>
+        </div>
       </div>
       <div className="socials-wrapper">
         <button className="social-icon">
